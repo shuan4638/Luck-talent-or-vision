@@ -1,6 +1,6 @@
 # Talent, Luck or Vision?
 
-An easy python reproduction and modification of the 2022 Ig Nobel Prize for Economics 
+An simple python reproduction and modification of the 2022 Ig Nobel Prize for Economics 
 <br>**"Which Is More Important: Talent or Luck?"**<br>
 <img src="https://i.imgur.com/h3TOqKD.png" width="600px">
 
@@ -8,17 +8,18 @@ An easy python reproduction and modification of the 2022 Ig Nobel Prize for Econ
 
 ### Original rules
 1. There are *N* people in the town with different talent. Each person has a starting capital 10
-2. There are *N_E* luck events and *N_E* unlucky events randomly occur in the town at every iteration
+2. There are *N_E/2* luck events and *N_E/2* unlucky events randomly occur in the town at every iteration
 3. When a person meets a lucky event, the capital is doubled based on talent
 4. When a person meets an unlucky event, the capital becomes half
 
 ### Extra rules:
-5. Lucky event cannot occur if unlucky event occurs
+5. Unlucky event does not occurs if an individual's has high caution
 6. Lucky event occurs if it is within an individual's vision
-7. Unlucky event occurs if it is not in an individual's caution
 
 ## Experiments:
-N = 1000, N_E= 250<br>
+For simplicity, I make the town to one-dimension
+
+N = 100, N_E= 50, town_size = 4000 <br>
 
 - People with higher **talent** have more chances to seize the luck
 - People with higher **caution** have fewer chances to meet unlucky events
@@ -32,21 +33,22 @@ Distribution of Talent and vision :
 
 
 ### Scenario 1: Different talent (similar to the original experiment)
-The final capital is somewhat relevent to talent. Color indicates the talent of each person in town.
+The final capital is not so relevent to talent. Color indicates the talent of each person in town.
 
-<br><img src="https://i.imgur.com/SznKnu5.png" width="300px">
+<br><img src="https://i.imgur.com/x4ciqpo.png" width="300px">
 
 
 ### Scenario 2: Different talent and caution
-The final capital is relevent to talent and caution. Color indicates the talent of each person in town.
 
-<br><img src="https://i.imgur.com/RtY35vV.png" width="300px">
+The final capital is relevent to caution. Color indicates the talent of each person in town.
+
+<br><img src="https://i.imgur.com/hIHDQmb.png" width="300px">
 
 
 ### Scenario 3: Different talent and vision
-The final capital is very relevent to talent and vision. Color indicates the talent of each person in town.
+The final capital is more relevent to vision. Color indicates the talent of each person in town.
 
-<br><img src="https://i.imgur.com/EXzgBfZ.png" width="300px">
+<br><img src="https://i.imgur.com/Py3h9Wu.png" width="300px">
 
 
 ## Credits
